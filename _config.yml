@@ -7,8 +7,11 @@ description: Jonathan Lane studies interesting nonlinear systems such as flappin
 remote_theme: pmarsceill/just-the-docs
 search_enabled: true
 aux_links:
-    "Issues":
-      - "https://github.com/jglane/jglane.github.io/issues"
-    "Source on GitHub":
-      - "https://github.com/jglane/jglane.github.io"
-      
+  "Issues":
+    - "https://github.com/jglane/jglane.github.io/issues"
+  "Source on GitHub":
+    - "https://github.com/jglane/jglane.github.io"
+
+collections:
+  projects:
+    output: true
