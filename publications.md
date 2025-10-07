@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Publications"
+permalink: /publications
+---
+
 # Publications
 
 L. F. Wu, **J. Lane**, et al. "Airborne Underwater Vehicle Recovery System: Eagle Inspired Trajectory Generation and Control for UAV-Assisted Recovery of AUVs" *IEEE Access 2025*, 2025 [Link](https://ieeexplore.ieee.org/document/11122504)
