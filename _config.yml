@@ -12,6 +12,3 @@ defaults:
       layout: "default"
 search_enabled: true
 nav_enabled: true
-collections:
-  projects:
-    output: true
