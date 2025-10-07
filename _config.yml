@@ -3,6 +3,7 @@ plugins:
 - jekyll-remote-theme
 title: Jonathan Lane
 description: Jonathan Lane studies interesting nonlinear systems such as flapping wing vehicles, bicopters, quadrotors, and impulsive systems.
+permalink: pretty
 
 remote_theme: pmarsceill/just-the-docs
 search_enabled: true
