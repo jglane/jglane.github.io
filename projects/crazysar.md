@@ -1,6 +1,6 @@
 ---
-layout: page
-title: "CrazySAR"
+title: CrazySAR
+parent: Projects
 ---
 
 # CrazySAR

@@ -1,6 +1,5 @@
 ---
-layout: page
-title: "Projects"
+title: Projects
 ---
 
 # Recent Projects
