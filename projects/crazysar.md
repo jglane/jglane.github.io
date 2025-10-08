@@ -4,4 +4,4 @@ parent: Projects
 ---
 
 # CrazySAR
-<img src="../profile.jpg" alt="CrazySAR">
+<img src="/img/flap.gif" alt="CrazySAR">
