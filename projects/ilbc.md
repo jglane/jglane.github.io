@@ -1,8 +1,8 @@
 ---
-title: CrazySAR
+title: Inverse Learning Based Control
 parent: Projects
 nav_order: 2
 ---
 
-# Inverse Learning based Control
+# Inverse Learning Based Control
 <!-- <img src="../profile.jpg" alt="CrazySAR"> -->
