@@ -1,6 +1,7 @@
 ---
 title: CrazySAR
 parent: Projects
+nav_order: 1
 ---
 
 # CrazySAR

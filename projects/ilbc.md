@@ -5,4 +5,4 @@ nav_order: 2
 ---
 
 # Inverse Learning based Control
-<img src="../profile.jpg" alt="CrazySAR">
+<!-- <img src="../profile.jpg" alt="CrazySAR"> -->
