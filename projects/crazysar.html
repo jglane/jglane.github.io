@@ -12,28 +12,40 @@ nav_order: 1
     <p>
         CrazySAR is a modular aerial robotic system with decentralized control architecture built on the <a href="https://bitcraze.io" target="_blank">Crazyflie</a> platform. It consists of a collection of Crazyflie 2.1+ quadrotors connected to each other with fixed rods by spherical joints to create an open chain structure. The decentralized control architecture is modeled off of the Graph-Based Modeling and Control of Articulated Robots project, where each quadrotor is treated as an agent and physically connected agents can share state and control information. The rods are equipped with magents to allow for easy reconfiguration of the structure.
     </p>
+    <img src="/img/crazysar.png" alt="CrazySAR" width="100%"/>
     <p>
-        The system demonstrates many of the benefits of a decentralized control architecture, even though it is a single articulated robot. 
+        The system demonstrates many of the benefits of a decentralized control architecture, even though it is a single articulated robot. The main features of a decentralized control are:
     </p>
+    <ul>
+        <li>Scalability: The system can support open chain configurations of any size without changing the control law.</li>
+        <li>Flexibility: Any quadrotor agent can take the role (leader/follower) of any other agent in the system. The system also supports heterogeneuos agents with different size and weight.</li>
+        <li>Fault-tolerance: If one agent is behaving erratically or fails completely, the system can recover and regenerate with a new agent.</li>
+    </ul>
 
     <h2>Open chain configurations</h2>
-    <video width="100%" controls>
-        <source src="/img/flap.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <p>
-        One of the main advantages of decentralization is scalability. Control of the leader quadrotor (middle) can be chosen arbitrarily while the other quadrotors exert forces so as not to act against the constraint rods. Due to this, many quadrotors can be added to the structure without changing the control law.
-    </p>
     <video width="100%" controls>
         <source src="/img/star.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+    <video width="100%" controls>
+        <source src="/img/flap.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <!-- <p>
+        One of the main advantages of decentralization is scalability. Control of the leader quadrotor (middle) can be chosen arbitrarily while the other quadrotors exert forces so as not to act against the constraint rods. Due to this, many quadrotors can be added to the structure without changing the control law.
+    </p> -->
+    <p>
+        Open chain configurations with the topology of a hub-and-spoke graph and line graph can fly. In both configurations, the leader is in the middle and it sends control instructions to the followers so the forces along the carbon fiber rods are minimized. In the flapper configuration, the 1-hop followers send control instructions again to their followers. Therefore, since each agent relies on the state and control action of one upstream agent, the system is scalable. Also, minimizing the forces along the rods helps decouple agent dynamics across the system.
+    </p>
 
     <h2>Split and merge</h2>
     <video width="100%" controls>
         <source src="/img/split_merge.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+    <p>
+        A CrazySAR's ability to split and merge with other agents on command demonstrates its recoverability. In the demo video, one quadrotor was shut off, which happens when there is an issue with the radio connection or a mechanical failure. When it falls, the magnetic joint is separated, leaving the rest of the configuration unaffected. Using a remote control, the remaining two quadrotors are piloted down to attach with a replacement agent.
+    </p>
 
     <h2>Flexibility</h2>
     <video width="100%" controls>
