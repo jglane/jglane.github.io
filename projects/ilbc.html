@@ -1,0 +1,43 @@
+---
+title: Inverse Learning-Based Control
+parent: Projects
+nav_order: 2
+---
+
+<html>
+<head></head>
+<body>
+    <h1>Inverse Learning-Based Control</h1>
+    <p>
+        This work is in collaboration with postdoc Dr. Hamin Chang and my advisor Prof. Nak-seung Patrick Hyun.
+    </p>
+    <p>
+        In many nonlinear control problems, it can be difficult or impossible to derive a mathematical model of the system and thus a model-based control strategy cannot be implemented. In some cases, a linearized model may be available, but the linearization typically only applies to a finite region of attraction around the equilibrium. In this project, we propose a data-driven approach to expand the region of attraction for a linear feedback controller by learning the inverse dynamics of the system. The learned dynamics are then used to calculate an additional control input to augment the linear feedback controller. Experiments are currently in progress on a Crazyflie 2.1+ quadrotor which demonstrate the effectiveness of the proposed method.
+    </p>
+    <p>
+        Check back soon for results and updates! For now, here are some preliminary results:
+    </p>
+    <div style="display: flex; justify-content: space-between;">
+        <div style="flex: 1; margin-right: 10px;">
+            <h3>Nominal LQR controller</h3>
+            <video width="100%" controls>
+                <source src="/img/ilbc_nominal.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>
+                LQR controller on the linearized model about a hovering equilibrium.
+            </p>
+        </div>
+        <div style="flex: 1; margin-left: 10px;">
+            <h3>Learning-based controller</h3>
+            <video width="100%" controls>
+                <source src="/img/ilbc_learning.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>
+                The inverse dynamics are learned with a kernel-based model.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
